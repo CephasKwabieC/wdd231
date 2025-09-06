@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple HTML page">
+    <meta name="keywords" content="HTML, Example, Simple">
+    <meta name="author" content="Cephas Kwabie">
+    <title>WDD231 - Student Portfolio</title>
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 800px)">
+
+
+
+
+    <script src="scripts/navigation.js" defer></script>
+
+
+</head>
+<body>
+
+    <header>
+        <div class="logo-name">
+            <img src="image\cropped-min.webp" alt="Logo" width="50" height="50">
+            <span class ="site-name">Cephas Kwabie</span>
+        </div>
+
+        <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+
+
+        <nav>
+            <ul id="nav-links" class="hidden">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="chamber.html">Chamber Project</a></li>
+                <li><a href="final.html">Final</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+     
+
+    <main>
+        <h1>Home</h1>
+
+            <section class="about-photo">
+                <div class="about">
+                    <h2>About Me</h2>
+                    <p>
+                        My name is Cephas Kwabie, a student of BSc Computer Science at Brigham Young University - Idaho. I am passionate about web development and eager to learn more about creating dynamic and user-friendly websites. In my free time, I enjoy reading tech blogs, experimenting with new coding techniques, and contributing to open-source projects. I very much enjoy watching anime and listening to music.
+                         I look forward to applying the skills I acquire in this course to real-world projects and furthering my career in web development.
+                    </p>
+                </div>
+            
+                <div class="photo">
+                    <h2>Student Photo</h2>
+                    <img src="image\cropped-min.webp" alt="Student Photo" width="300" height="300" class="student-photo"> 
+                </div>
+            </section>
+        </section>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+        
+            <!-- Filters -->
+            <div class="filters">
+                <button data-filter="all">All</button>
+                <button data-filter="cse">CSE</button>
+                <button data-filter="wdd">WDD</button>
+            </div>
+        
+            <!-- Course Cards -->
+            <div id="course-cards">
+                <!-- JS will insert course cards here -->
+            </div>
+        
+            <p id="total-credits">The total credits for listed courses is: 0</p>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/cephas-kwabie" target="_blank">LinkedIn</a>
+            <a href="https://github.com/CephasKwabieC" target="_blank">GitHub</a>
+            <a href="#" target="_blank">X</a>
+        </div>
+    
+        <p>
+            &copy; <span id="currentyear"></span> | Cephas Kwabie | Greater Accra, Ghana
+        </p>
+    
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

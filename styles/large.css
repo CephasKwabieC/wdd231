@@ -1,0 +1,58 @@
+/* ===== Larger.css ===== */
+@media (min-width: 768px) {
+
+    /* Header */
+    #menu-toggle {
+        display: none;
+    }
+
+    nav ul {
+        display: flex !important;
+        flex-direction: row;
+        background: none;
+    }
+
+    nav li {
+        margin-left: 1rem;
+    }
+
+    nav a {
+        border-left: none;
+        padding: 0.5rem 1rem;
+    }
+
+    nav a.active {
+        border-bottom: 2px solid #ff6600;
+    }
+
+    /* About + Photo side by side */
+    .about-photo {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    /* Courses grid */
+    #course-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .course-card {
+        flex: 1 1 150px;
+        max-width: 200px;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    footer .social-links {
+        margin-bottom: 1rem;
+    }
+}
